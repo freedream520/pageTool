@@ -11,7 +11,6 @@ pageTool
 在html中加入如下代码
 ```html
 <ul id="page" class="pagination" ></ul>
-</div>
 ```
 
 在javascript中
