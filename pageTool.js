@@ -24,12 +24,12 @@ var PageTool = {
 			PageTool.pageMax=parseInt(option.pageMax);
 			PageTool.pagetotal=Math.ceil(parseInt(option.totalCount) / parseInt(option.pageSize));
 			this.setPage(1)
-			if(callback!=null&&typeof(callback) == 'function'){
+			if(callback!=null&&typeof(callback) === 'function'){
 				callback();
 			}
 		},
 		setPage:function(index,callback){
-			if(PageTool.pagetotal==0)
+			if(PageTool.pagetotal===0)
 				return;
 			PageTool.current=parseInt(index);
 			$("#page").html("");
@@ -71,7 +71,7 @@ var PageTool = {
 			}else{
 				this.setActive(PageTool.current,this.clickFlag);
 			}
-			if(callback!=null&&typeof(callback) == 'function'){
+			if(callback!=null&&typeof(callback) === 'function'){
 				callback();
 			}
 		},
